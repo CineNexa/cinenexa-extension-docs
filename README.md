@@ -32,6 +32,5 @@ Atleast one of the following properties **MUST** be returned
 url, String - Direct link to the video stream 
 ytId, String - Youtube ID to be played when user clicks on the specific stream 
 magnet, String - Magnet link of the torrent file, if returned response video is a torrent 
-fileIndex, Integer - Index of the video stream within the torrent, if the torrent contains more than 1 file.
 external, String - Url to be opened, when user clicks on the specific stream 
 ```
