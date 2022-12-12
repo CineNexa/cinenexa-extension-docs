@@ -1,2 +1,2 @@
-# cinenexa-extension-docs
+# CineNexa Extension Docs
 Api documentation for creating CineNexa extensions 
