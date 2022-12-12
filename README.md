@@ -29,9 +29,9 @@ Lets dive into more details on the response object.
 
 Atleast one of the following properties **MUST** be returned
 ```
-url, String - Direct link to the video stream ("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4)
-ytId, String - Youtube ID to be played when user clicks on the specific stream (aqz-KE-bpKQ)
-magnet, String - Magnet link of the torrent file, if returned response video is a torrent (magnet:?xt=urn:btih:dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c&dn=Big+Buck+Bunny&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fbig-buck-bunny.torrent)
+url, String - Direct link to the video stream 
+ytId, String - Youtube ID to be played when user clicks on the specific stream 
+magnet, String - Magnet link of the torrent file, if returned response video is a torrent 
 fileIndex, Integer - Index of the video stream within the torrent, if the torrent contains more than 1 file.
-external, String - Url to be opened, when user clicks on the specific stream (https://www.google.com)
+external, String - Url to be opened, when user clicks on the specific stream 
 ```
