@@ -4,9 +4,9 @@
 
 This Api Doc acts as a starting point for Extension Developers to create and publish extensions. 
 
-For more info on Extensions, visit here: [Developer](https://www.cinenexa.com/developer/)
+For more info on Extensions, visit here: Developer[https://www.cinenexa.com/developer/]
 
-**Cinenexa has no way to verify the legality of the extensions, you develop. It is your responsibility to abide by the respective laws. For more info, see our [Terms & Conditions](https://www.cinenexa.com/terms-conditions/)**
+**Cinenexa has no way to verify the legality of the extensions, you develop. It is your responsibility to abide by the respective laws.**
 
 ## Intro
 An extension is a REST Api, providing movie/show streams to CineNexa app.
@@ -78,4 +78,51 @@ Whenever CineNexa makes request to your extension, the following properties will
 
 >**traktId**, String - Trakt id of the requested item
 
->**name**, String - Name of item requested
+## Example
+This sample extension responds 2 streams of Big Buck Bunny, one with direct https url while the second as a magnet link.
+
+```
+import express from "express";
+
+var app = express();
+
+const port = 8000;
+
+app.listen(port, function (err) {
+  if (err) {
+    console.log("Error while starting server");
+  } else {
+    console.log("Server has been started at " + port);
+  }
+});
+
+app.get("/", (req, res, next) => {
+  let name = req.query.name;
+  let imdbId = req.query.imdbId;
+
+  let respondData;
+
+  if (imdbId === "tt10872600" || name === "Big Bunny") {
+    respondData = {
+      streams: [
+        {
+          url:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          name: "Big Bunny",
+          quality: "1080"
+        },
+        {
+          magnet:
+            "magnet:?xt=urn:btih:c9e15763f722f23e98a29decdfae341b98d53056&dn=Cosmos+Laundromat&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fcosmos-laundromat.torrent",
+          name: "Big Bunny",
+          torrent: true,
+          seeds: 1345
+        }
+      ]
+    };
+  }
+
+  res.json(respondData);
+});
+
+```
