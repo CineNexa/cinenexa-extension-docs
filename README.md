@@ -77,3 +77,5 @@ Whenever CineNexa makes request to your extension, the following properties will
 >**tmdbId**, String - Tmdb id of the requested item
 
 >**traktId**, String - Trakt id of the requested item
+
+>**name**, String - Name of item requested
