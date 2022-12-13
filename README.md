@@ -48,7 +48,7 @@ The other optional properties are the following:
 
 >**quality**, String - quality of the stream (accepted values - 144, 360, 480, 720, 1080, 1440, 2000, 4000, 8000)
 
->**langCountry** - language country of the stream (accepts ISO 3166-1 alpha-2	 codes)
+>**country** - country to which the stream is restricted to (accepts ISO 3166-1 alpha-2 codes). This can be used to represent the audio language of stream
 
 >**subbed**, bool -  if the stream contains embedded subtitles
 
