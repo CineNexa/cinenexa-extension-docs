@@ -6,7 +6,7 @@ This Api Doc acts as a starting point for Extension Developers to create and pub
 
 For more info on Extensions, visit here: [Developer](https://www.cinenexa.com/developer/)
 
-**Cinenexa has no way to verify the legality of the extensions, you develop. It is your responsibility to abide by the respective laws.**
+**Cinenexa has no way to verify the legality of the extensions, you develop. It is your responsibility to abide by the respective laws. For more info, see our [Terms & Conditions](https://www.cinenexa.com/terms-conditions/)**
 
 ## Intro
 An extension is a REST Api, providing movie/show streams to CineNexa app.
