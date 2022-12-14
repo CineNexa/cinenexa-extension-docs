@@ -134,5 +134,10 @@ We recommend to deploy your extension to any of the following services, as all o
 - [Fly](https://fly.io/)
 - [Railway](https://railway.app/)
 
+Serverless functions can also be used for deploying extensions, but it is to be kept in mind that these cold start on every requests (or after a given time period) which can increase your response time
+- [Firebase Functions](https://firebase.google.com/docs/functions/get-started)
+- [AWS Lambda](https://aws.amazon.com/lambda/)
+- [Supabase Functions](https://supabase.com/docs/guides/functions)
+
 
 After deploying your extension, publish your extension in the app for it to be visible to users. You can publish your extension by providing details here - [Publish Extension](https://www.cinenexa.com/publish-extension/)
