@@ -126,5 +126,10 @@ app.get("/", (req, res, next) => {
 
   res.json(respondData);
 });
-
 ```
+
+## Deploy
+We recommend to deploy your extension to any of the following services, as all of them provides free tiers:
+
+
+After deploying your extension, publish your extension in the app for it to be visible to users. You can publish your extension by providing details here - [Publish Extension](https://www.cinenexa.com/publish-extension/)
