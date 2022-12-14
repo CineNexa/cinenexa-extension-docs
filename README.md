@@ -4,7 +4,7 @@
 
 This Api Doc acts as a starting point for Extension Developers to create and publish extensions. 
 
-For more info on Extensions, visit here: Developer[https://www.cinenexa.com/developer/]
+For more info on Extensions, visit here: [Developer](https://www.cinenexa.com/developer/)
 
 **Cinenexa has no way to verify the legality of the extensions, you develop. It is your responsibility to abide by the respective laws.**
 
