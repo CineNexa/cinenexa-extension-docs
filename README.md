@@ -130,6 +130,9 @@ app.get("/", (req, res, next) => {
 
 ## Deploy
 We recommend to deploy your extension to any of the following services, as all of them provides free tiers:
+- [Render](https://render.com/)
+- [Fly](https://fly.io/)
+- [Railway](https://railway.app/)
 
 
 After deploying your extension, publish your extension in the app for it to be visible to users. You can publish your extension by providing details here - [Publish Extension](https://www.cinenexa.com/publish-extension/)
