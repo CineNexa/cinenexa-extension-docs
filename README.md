@@ -78,6 +78,8 @@ Whenever CineNexa makes request to your extension, the following properties will
 
 >**traktId**, String - Trakt id of the requested item
 
+>**name**, String - Name of the requested item
+
 ## Example
 This sample extension responds 2 streams of Big Buck Bunny, one with direct https url while the second as a magnet link.
 
