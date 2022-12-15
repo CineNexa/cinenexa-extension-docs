@@ -1,6 +1,6 @@
 
 # CineNexa Extension Docs
-![Logo](https://www.cinenexa.com/wp-content/uploads/2022/11/Uniwatch.png)
+![Logo](https://www.cinenexa.com/wp-content/uploads/2022/12/CineNexa-150x150.png)
 
 This Api Doc acts as a starting point for Extension Developers to create and publish extensions. 
 
