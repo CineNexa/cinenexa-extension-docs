@@ -18,7 +18,7 @@ For more info on Extensions, visit here: [Developer](https://www.cinenexa.com/de
 ## Intro
 An extension is a REST Api, providing movie/show streams to CineNexa app.
 
-Whenever a user clicks on a movie/show, CineNexa sends a data object (containing data related to the movie/show clicked) to all the extensions (installed by the user). The extensions are given a time frame of **15 seconds** to respond to the request after which the request is timed out. The extensions respond data in Json-encoded format.
+Whenever a user clicks on a movie/show, CineNexa sends a data object (containing data related to the movie/show clicked) to all the extensions (installed by the user). The extensions are given a time frame of **30 seconds** to respond to the request after which the request is timed out. The extensions respond data in Json-encoded format.
 
 ## Response
 Your extension is a simple REST api, which should return results in JSON format. 
