@@ -36,6 +36,12 @@ This is what a sample response look like:
            "size":125,
            "subbed":false,
            "streamGroup":"SAMPLE_EXT_UNIQUE_STRING"
+           "subtitles" : [
+                {
+                    "title" : "English",
+                    "url" : "xyz.srt"
+                }
+           ],
         }
     ]
 }
@@ -80,6 +86,16 @@ The other optional properties are the following:
 
 >**streamGroup**, String - (Not yet implemented) this is used for autoplay of next episodes. For eg., for a given ep of a show, this can be labelled as "EXAMPLE_ADDON_360p" and if any stream of the next episode contains the same streamGroup, that stream will be chosen for autoplay implicitly
 
+
+
+>**subtitles**, List - List of subtitle objects (refer to Subtitle Object) for the stream object
+
+### Subtitle Object
+
+>**title**, String - Title of the subtitle which will be shown to user for selection
+
+>**url**, String - Url link to the subtitle file (supported formats - srt & vtt)
+>
 
 ## Received Data
 Whenever CineNexa makes request to your extension, the following properties will be url encoded to be accessed by your extension:
