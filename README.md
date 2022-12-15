@@ -78,7 +78,7 @@ The other optional properties are the following:
 
 >**seeds**, double - no. of seeds (for torrent streams)
 
->**streamGroup**, String - this is used for autoplay of next episodes. For eg., for a given ep of a show, this can be labelled as "EXAMPLE_ADDON_360p" and if any stream of the next episode contains the same streamGroup, that stream will be chosen for autoplay implicitly
+>**streamGroup**, String - (Not yet implemented) this is used for autoplay of next episodes. For eg., for a given ep of a show, this can be labelled as "EXAMPLE_ADDON_360p" and if any stream of the next episode contains the same streamGroup, that stream will be chosen for autoplay implicitly
 
 
 ## Received Data
