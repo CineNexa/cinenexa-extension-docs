@@ -8,6 +8,13 @@ For more info on Extensions, visit here: [Developer](https://www.cinenexa.com/de
 
 **Cinenexa has no way to verify the legality of the extensions, you develop. It is your responsibility to abide by the respective laws.**
 
+# Table of Contents
+1. [Intro](#intro)
+2. [Response](#response)
+3. [Received Data](#received-data)
+4. [Example](#example)
+5. [Deploy](#deploy)
+
 ## Intro
 An extension is a REST Api, providing movie/show streams to CineNexa app.
 
@@ -20,16 +27,27 @@ This is what a sample response look like:
 
 ```
 {
-   "url":"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-   "name":"Big Buck Bunny",
-   "quality":720,
-   "size":125,
-   "subbed":false,
-   "streamGroup":"SAMPLE_EXT_UNIQUE_STRING"
+    "cacheTimeout" : 43200,
+    "streams" : [
+        {
+           "url":"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+           "name":"Big Buck Bunny",
+           "quality":720,
+           "size":125,
+           "subbed":false,
+           "streamGroup":"SAMPLE_EXT_UNIQUE_STRING"
+        }
+    ]
 }
 ```
 
 Lets dive into more details on the response object.
+
+>**cacheTimeout**, Integer - (Not yet implemented) In order to reduce your server costs as well as user bandwidth, CineNexa does not send request to your server everytime a user opens a specific movie/show details (say X) and stores the responses in cache. This property represents the time period (in seconds) for which CineNexa will keep the returned streams in cache and after which, if the user opens the details of X, a new request will be sent.
+
+>**streams**, list - Stream object containing stream details
+
+### Stream Object
 
 Atleast one of the following properties **MUST** be returned
 
