@@ -164,6 +164,7 @@ app.get("/", (req, res, next) => {
 
 ## Deploy
 We recommend to deploy your extension to any of the following services, as all of them provides free tiers:
+- [GCP App Engine](https://cloud.google.com/appengine)
 - [Render](https://render.com/)
 - [Fly](https://fly.io/)
 - [Railway](https://railway.app/)
