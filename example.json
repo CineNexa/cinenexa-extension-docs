@@ -1,0 +1,50 @@
+[
+  {
+    "id" : "q-genre",
+    "type" : "checkbox",
+    "title" : "Genres",
+    "description" : "Select the genres",
+    "fields" : [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
+    "required" : true
+  },
+  {
+    "id" : "q-country",
+    "type" : "dropdown",
+    "title" : "Country",
+    "description" : "Select the countries",
+    "fields" : [
+      "USA",
+      "UK",
+      "Germany",
+      "France"
+    ],
+    "required" : false
+  },
+  {
+    "id" : "q-lang",
+    "type" : "radio",
+    "title" : "Language",
+    "description" : "Select the language",
+    "fields" : [
+      "English",
+      "German",
+      "Hindi",
+      "Arabic"
+    ],
+    "required" : true
+  },
+  {
+    "id" : "q-key",
+    "type" : "text",
+    "title" : "API key",
+    "description" : "Enter your api key",
+    "required" : true,
+    "maxLines" : 4,
+    "inputType" : "string"
+  }
+]
