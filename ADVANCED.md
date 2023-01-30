@@ -79,6 +79,19 @@ A sample of manifest.json:
 
 **All fields are mandatory except "maxLines" & "inputType" in text.** 
 
+
+The following example results in the following generated form:
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/71683523/215552110-0067895e-8848-4121-8f90-540fc50f1bfc.jpg" width="30%" />
+  <img src="https://user-images.githubusercontent.com/71683523/215552120-e35ac884-81e7-49d3-9819-fa4932b2579b.jpg" width="30%" /> 
+</p>
+
+The json output:
+
+```json
+{"q-genre":["Adventure","Drama"],"q-lang":"English","q-key":"jkm"}
+```
+
 #### Accesing User Data
 Normally, a GET call is performed to an extension's endpoint and all the data related to the movie/show is url-encoded.
 
