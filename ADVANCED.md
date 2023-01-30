@@ -105,5 +105,5 @@ let encodedData = req.body;
 let userData = JSON.parse(encodedData.params);
 
 queryParams.name; // Name of the requested movie/show
-encodedData['q-genre']; // Genre selected by user in the example above
+userData['q-genre']; // Genre selected by user in the example above
 ```
