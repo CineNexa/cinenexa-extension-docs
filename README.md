@@ -14,6 +14,7 @@ For more info on Extensions, visit here: [Developer](https://www.cinenexa.com/de
 3. [Received Data](#received-data)
 4. [Example](#example)
 5. [Deploy](#deploy)
+6. [Advanced](#advanced)
 
 ## Intro
 An extension is a REST Api, providing movie/show streams to CineNexa app.
@@ -178,3 +179,6 @@ Serverless functions can also be used for deploying extensions, but it is to be 
 
 
 After deploying your extension, publish your extension in the app for it to be visible to users. You can publish your extension by providing details here - [Publish Extension](https://www.cinenexa.com/publish-extension/)
+
+## Advanced
+For advanced usage of extensions involving user data, refer here
