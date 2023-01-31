@@ -181,4 +181,4 @@ Serverless functions can also be used for deploying extensions, but it is to be 
 After deploying your extension, publish your extension in the app for it to be visible to users. You can publish your extension by providing details here - [Publish Extension](https://www.cinenexa.com/publish-extension/)
 
 ## Advanced
-For advanced usage of extensions involving user data, refer here
+For advanced usage of extensions involving user data, refer here [Advanced](https://github.com/sommye-ctr/cinenexa-extension-docs/blob/main/ADVANCED.md)
