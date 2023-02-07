@@ -95,7 +95,7 @@ The json output:
 #### Accesing User Data
 Normally, a GET call is performed to an extension's endpoint and all the data related to the movie/show is url-encoded.
 
-When an extension marks itself as an extension which requires user data (by providing manifest.json url during publishing process), PUT calls are performed for that extension. The user data is passed in the body of PUT request but any data related to the movie/show is still url-encoded and can be accessed normally from query params.
+When an extension marks itself as an extension which requires user data (by providing configuration.json url during publishing process), PUT calls are performed for that extension. The user data is passed in the body of PUT request but any data related to the movie/show is still url-encoded and can be accessed normally from query params.
 ```js
 let queryParams = req.query;
 let encodedData = req.body;
