@@ -1,3 +1,5 @@
+# The docs have been moved [here](https://docs.cinenexa.com/). The content on this page might be stale and outdated.
+
 
 # CineNexa Extension Docs
 ![Logo](https://www.cinenexa.com/wp-content/uploads/2022/12/CineNexa-150x150.png)
